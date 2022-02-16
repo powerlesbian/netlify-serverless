@@ -1,0 +1,22 @@
+{
+  "name": "netlify-serverless",
+  "version": "1.0.0",
+  "description": "G following the netlify serverless tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerlesbian/netlify-serverless.git"
+  },
+  "author": "G Chao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/powerlesbian/netlify-serverless/issues"
+  },
+  "homepage": "https://github.com/powerlesbian/netlify-serverless#readme",
+  "devDependencies": {
+    "node-fetch": "^3.2.0"
+  }
+}
