@@ -1,9 +1,13 @@
 {
   "name": "netlify-serverless",
   "version": "1.0.0",
-  "description": "G following the netlify serverless tutorial",
+  "description": "G following the netlify serverless tutorial and now developing to also include Next.js",
   "main": "index.js",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build", 
+    "start": "next start",
+    "export": "next export",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +22,10 @@
   "homepage": "https://github.com/powerlesbian/netlify-serverless#readme",
   "devDependencies": {
     "node-fetch": "^2.6.7"
+  },
+  "dependencies": {
+    "next": "^12.0.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
