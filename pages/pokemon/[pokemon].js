@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import styles from './Pokemon.module.css'
 
 function Pokemon( {pokemon}) {
 
@@ -10,7 +11,9 @@ function Pokemon( {pokemon}) {
         <meta name="viewport" content= "initial-scale=1.0, width=device-width"/>
 
     </Head>
-    <div> Welcome dear {pokemon?.name} fan! 
+    <div className={styles.container}> 
+    
+    Welcome dear {pokemon?.name} fan! 
 
     <img src={pokemon?.sprites.other.home.front_default} />
     
@@ -20,16 +23,32 @@ function Pokemon( {pokemon}) {
     </Link>
     </>)
 }
-export async function getStaticProps(){
 
-    const res = await fetch('https://pokeapi.co/api/v2/pokemon/charmander')
+export async function getStaticPaths(){
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=151`)
+    const pokemon = await res.json()
+
+    let paths = pokemon.results.map(p => {
+        return `/pokemon/${p.name}`
+    })
+
+    return {
+        paths,
+        fallback: true,
+    }
+
+}
+
+export async function getStaticProps({params}){
+
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${params.pokemon}`)
     const pokemon = await res.json()
         return {
             props: {
                 pokemon,
             },
         }
-
 }
+
 
 export default Pokemon
