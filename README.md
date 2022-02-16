@@ -1,6 +1,6 @@
 # Checking out how to do Serverless Functions with Netlify (Jamstack Explorers)
 
-A note on the dependancy node-fetch. node-fetch from v3 is an ESM-only module - you are not able to import it with require().  Since the tutorial is using require instead of import(), we are using node-fetch v2. 
+A note on the dependency node-fetch. node-fetch from v3 is an ESM-only module - you are not able to import it with require().  Since the tutorial is using require instead of import(), we are using node-fetch v2. 
 
 
 Learn how to use serverless functions in less than 30 minutes!
