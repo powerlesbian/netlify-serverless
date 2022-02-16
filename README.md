@@ -2,6 +2,9 @@
 
 A note on the dependency node-fetch. node-fetch from v3 is an ESM-only module - you are not able to import it with require().  Since the tutorial is using require instead of import(), we are using node-fetch v2. 
 
+a button that on click fetches from the pokemon api, and serverless function that differentiates between the two regions:
+
+![Screenshot 2022-02-16 at 4 51 44 PM](https://user-images.githubusercontent.com/81912588/154229018-673538b4-d50f-4696-9eeb-4377e9fb6464.png)
 
 Learn how to use serverless functions in less than 30 minutes!
 
