@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/powerlesbian/netlify-serverless#readme",
   "devDependencies": {
-    "node-fetch": "^3.2.0"
+    "node-fetch": "^2.6.7"
   }
 }
